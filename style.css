@@ -50,8 +50,9 @@ body{
     max-width: 360px;
 }
 
-.container tag{
+.container h2{
     text-align: left;
+    font-size: 22px;
 }
 
 .tipRate{
