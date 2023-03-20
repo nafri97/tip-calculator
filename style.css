@@ -1,0 +1,188 @@
+*, body{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+}
+
+body{
+    background-color:hsl(185, 41%, 84%);
+    
+}
+
+:root{
+    --Very: hsl(183, 100%, 15%);
+    --Dark: hsl(186, 14%, 43%);
+    --Grayish: hsl(184, 14%, 56%);
+    --Light: hsl(185, 41%, 84%);
+    --beige: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%)
+}
+
+.logo{
+    margin-top: 15vh;
+}
+
+#error1, #error2{
+    font-size: 14px;
+    display: none;
+    margin-left:10px;
+    color: hsl(0, 74%, 57%);
+}
+.container {
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    max-width: 800px;
+    margin-top: 50px; 
+    margin-left:max(50px, 20vw );
+    border-radius: 24px;
+}
+.container> *:not(.card) {
+    margin: 30px 30px 0;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    max-width: 360px;
+}
+
+.container tag{
+    text-align: left;
+}
+
+.tipRate{
+    max-width: 800px;
+    display: flexbox;   
+}
+
+/* =============== input box =================== */
+
+#bill, #people{
+    width: 300px;
+    height: 40px;
+    background-color: hsl(189, 41%, 97%);
+    margin: 0 30px 0;
+    text-align: right; 
+    padding: 0 20px;
+    border-radius: 6px;
+    background-repeat: no-repeat ;
+    background-position:left 10px center;
+}
+
+#bill:focus, #people:focus{
+    outline-color: hsl(172, 67%, 45%);
+}
+
+#bill{background-image: url(images/icon-dollar.svg);}
+#people{background-image: url(images/icon-person.svg)}
+
+
+/* =================== button ================ */
+.tipRate button, #custom{
+    height: 40px;
+    width: 90px;
+    color: white;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 6px;
+    cursor: pointer;
+}
+.card button{
+    margin: 120px 30px;
+    padding: 7px;
+    background-color: hsl(172, 67%, 45%);
+    border-radius: 6px;
+    color: hsl(183, 100%, 15%);
+}
+
+.tipRate button:hover, .card button:hover{
+    cursor: pointer;
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+/* ================== card ========================= */
+.card{
+    margin: 30px;
+    position: absolute;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(183, 100%, 15%);
+    height: 360px;
+    width: 340px;
+    border-radius: 24px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 30px 0;
+}
+
+.column{
+    font-size: 22px;
+    text-align: left;
+    color: white;
+}
+
+.column p{
+    color: hsl(184, 14%, 56%);
+    font-size: 14px;
+    text-align: left;
+}
+
+#total, #amount{
+    color:  hsl(172, 67%, 45%);
+    font-size: 34px;
+}
+.attribution { font-size: 11px; text-align: center; margin-top: 10vh}
+.attribution a { color: hsl(228, 45%, 44%); font-size: 11px}
+
+
+@media screen and (max-width : 768px){
+    .logo{margin-top: 20vw}
+    .container {
+        height: 700px;
+        margin-top: 10vw; 
+        margin-left:0;
+    }
+    .container> *:not(.card) {
+        margin: 30px 30px 0;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+        max-width: 700px;
+    }
+    #bill, #people{
+        max-width: 700px;
+        width: calc( 90vw - 65px );
+        height: 40px;
+        margin: 0 30px 0;
+        border-radius: 6px;
+    }
+    .card{
+        margin: 30px 5vw;
+        position: inherit;
+        left: 0;
+        height: 290px;
+        width: 90vw;
+        border-radius: 24px;
+    }
+    .card button{
+        margin: 40px 30px;
+        padding: 6px;
+    }
+    #total, #amount{
+        color:  hsl(172, 67%, 45%);
+        font-size: 26px;
+    }
+    .column{
+        font-size: 20px;
+    }
+    .attribution {display: none }
+}

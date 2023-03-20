@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet"  href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <img class="logo" src="images/logo.svg" alt="logo"/>
+  
+  <div class="container">
+    <tag>Bill<div id="error1">invalid!</div></tag>
+    <input id="bill" oninput="calculateTip()" value="0">
+    <tag>Select Tip %</tag>
+    <div class="tipRate" >
+      <button id="buttonSet1" onclick="setTipRate(this, 5)">5%</button>
+      <button id="buttonSet2" onclick="setTipRate(this, 10)">10%</button>
+      <button id="buttonSet3" onclick="setTipRate(this, 15)">15%</button>
+      <button id="buttonSet4" onclick="setTipRate(this, 25)">25%</button>
+      <button id="buttonSet5" onclick="setTipRate(this, 50)">50%</button>
+      <input id="custom" placeholder="Custom" oninput="calculateTip()">
+    </div>
+    <tag>Number of People<div id="error2">can't be zero</div></tag>
+    <input id="people" oninput="calculateTip()" value="1">
+    <div class="card">
+      <div class="row">
+        <div class="column">
+          <label>Tip Amount</label>
+          <p>/ person</p>
+        </div>
+        <div id="amount">$0.00</div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <label>Total</label>
+          <p id="ofPeople">of 0 person</p>
+        </div>
+        <div id="total">$0.00</div>
+      </div>
+      <button onclick="resetPage()">Reset</button>
+    </div>  
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="linkedin.com/in/nafri97">Irfan Rizki Saputra</a>.
+  </div>
+<script src="data.js"></script>
+</body>
+</html>
