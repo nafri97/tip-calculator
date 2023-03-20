@@ -12,15 +12,6 @@ body{
     
 }
 
-:root{
-    --Very: hsl(183, 100%, 15%);
-    --Dark: hsl(186, 14%, 43%);
-    --Grayish: hsl(184, 14%, 56%);
-    --Light: hsl(185, 41%, 84%);
-    --beige: hsl(189, 41%, 97%);
-    --White: hsl(0, 0%, 100%)
-}
-
 .logo{
     margin-top: 15vh;
 }
@@ -50,9 +41,9 @@ body{
     max-width: 360px;
 }
 
-.container h2{
+.container label{
     text-align: left;
-    font-size: 22px;
+    color: hsl(186, 14%, 43%);
 }
 
 .tipRate{
@@ -127,8 +118,11 @@ body{
 
 .column{
     font-size: 22px;
-    text-align: left;
     color: white;
+}
+
+.column h2{
+    text-align: left;
 }
 
 .column p{
