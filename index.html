@@ -14,9 +14,9 @@
   <img class="logo" src="images/logo.svg" alt="logo"/>
   
   <div class="container">
-    <h2>Bill<div id="error1">invalid!</div></h2>
+    <label for="bill">Bill<div id="error1">invalid!</div></label>
     <input id="bill" oninput="calculateTip()" value="0">
-    <h2>Select Tip %</h2>
+    <label for="custom">Select Tip %</label>
     <div class="tipRate" >
       <button id="buttonSet1" onclick="setTipRate(this, 5)">5%</button>
       <button id="buttonSet2" onclick="setTipRate(this, 10)">10%</button>
@@ -25,7 +25,7 @@
       <button id="buttonSet5" onclick="setTipRate(this, 50)">50%</button>
       <input id="custom" placeholder="Custom" oninput="calculateTip()">
     </div>
-    <h2>Number of People<div id="error2">can't be zero</div></h2>
+    <label for="people">Number of People<div id="error2">can't be zero</div></label>
     <input id="people" oninput="calculateTip()" value="1">
     <div class="card">
       <div class="row">
