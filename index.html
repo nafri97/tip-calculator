@@ -12,7 +12,7 @@
 </head>
 <body>
   <img class="logo" src="images/logo.svg" alt="logo"/>
-  
+  <h1>Calculate your tip!</h1>
   <div class="container">
     <label for="bill">Bill<div id="error1">invalid!</div></label>
     <input id="bill" oninput="calculateTip()" value="0">
@@ -30,14 +30,14 @@
     <div class="card">
       <div class="row">
         <div class="column">
-          <label>Tip Amount</label>
+          <h2>Tip Amount</h2>
           <p>/ person</p>
         </div>
         <div id="amount">$0.00</div>
       </div>
       <div class="row">
         <div class="column">
-          <label>Total</label>
+          <h2>Total</h2>
           <p id="ofPeople">of 0 person</p>
         </div>
         <div id="total">$0.00</div>
@@ -45,10 +45,10 @@
       <button onclick="resetPage()">Reset</button>
     </div>  
   </div>
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="linkedin.com/in/nafri97">Irfan Rizki Saputra</a>.
-  </div>
+  </footer>
 <script src="data.js"></script>
 </body>
 </html>
