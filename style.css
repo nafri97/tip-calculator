@@ -8,10 +8,22 @@
 }
 
 body{
-    background-color:hsl(185, 41%, 84%);
-    
+    background-color:hsl(185, 41%, 84%);  
 }
-
+.github-corner {
+    border-bottom: 0;
+    position: fixed;
+    right: 0;
+    text-decoration: none;
+    top: 0;
+    z-index: 1;
+    transition: transform 250ms ease-out;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
 .logo{
     margin-top: 15vh;
 }
