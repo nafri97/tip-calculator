@@ -8,7 +8,21 @@
 }
 
 body{
-    background-color:hsl(185, 41%, 84%);  
+    background-color:hsl(185, 41%, 84%);
+}
+.github-corner svg {
+    color: hsl(185, 41%, 84%);
+    fill: hsl(183, 100%, 15%);
+    height: 80px;
+    width: 80px;
+}
+.github-corner {
+    border-bottom: 0;
+    position: fixed;
+    right: 0;
+    text-decoration: none;
+    top: 0;
+    z-index: 100;
 }
 
 .logo{
@@ -136,21 +150,6 @@ body{
 }
 .attribution { font-size: 11px; text-align: center; margin-top: 10vh}
 .attribution a { color: hsl(228, 45%, 44%); font-size: 11px}
-
-.github-corner svg {
-    color: hsl(185, 41%, 84%);
-    fill: hsl(183, 100%, 15%);
-    height: 80px;
-    width: 80px;
-}
-.github-corner {
-    border-bottom: 0;
-    position: fixed;
-    right: 0;
-    text-decoration: none;
-    top: 0;
-    z-index: 100;
-}
 
 
 @media screen and (max-width : 768px){
